@@ -1,6 +1,6 @@
 const { Client, GatewayIntentBits } = require('discord.js');
 const { joinVoiceChannel, createAudioPlayer, createAudioResource } = require('@discordjs/voice');
-import { config } from 'dotenv';
+const { config } = require('dotenv');
 config();
 
 const client = new Client({
@@ -31,7 +31,7 @@ client.on('messageCreate', async (message) => {
         const voiceChannel = message.member.voice.channel;
 
         if (!voiceChannel) {
-            message.reply('Please fall in love with me');
+            message.reply('Great Song by Mr.Ball');
             return;
         }
 
@@ -49,7 +49,7 @@ client.on('messageCreate', async (message) => {
         player.play(resource);
         connection.subscribe(player);
 
-        message.reply('Who tryna fuck"!');
+        message.reply('The song is now playing"!');
 
         // Disconnect when the song finishes
         player.on('idle', () => {
