@@ -1,5 +1,7 @@
 const { Client, GatewayIntentBits } = require('discord.js');
 const { joinVoiceChannel, createAudioPlayer, createAudioResource } = require('@discordjs/voice');
+import { config } from 'dotenv';
+config();
 
 const client = new Client({
     intents: [
@@ -10,8 +12,8 @@ const client = new Client({
     ],
 });
 
-const TOKEN = 'MTMyNDQ3MTk5MzA4NDQxMTkwNA.G1Yumm.JD0KfG56hwuTVd_cS92U6kp4es5TpVptuBeukI'; // Replace with your bot's token
-const SONG_PATH = 'Kanye West - Life Of The Party (feat. Andre 3000).mp3'; // Replace with your song file's path
+const TOKEN = process.env.DISCORD_TOKEN; 
+const SONG_PATH = './Songs/song.mp3'
 
 client.once('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
