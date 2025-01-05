@@ -15,38 +15,28 @@ This Discord Music Bot is a fun and interactive tool designed to enhance user en
 
 ## 📦 Installation
 
-1. **Clone the repository**:
-
+1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/discord-music-bot.git
    cd discord-music-bot
+   ```
 
-2.  **Install dependencies**:
-    
-    bash
-    
-    Copy code
-    
-    `npm install`
-    
-3.  **Create a `.env` file** in the root directory and add your Discord bot token:
-    
-    env
-    
-    Copy code
-    
-    `DISCORD_TOKEN=your_discord_bot_token`
-    
-4.  **Run the bot**:
-    
-    bash
-    
-    Copy code
-    
-    `node index.js`
-    
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-* * *
+    
+3. Create a `.env` file in the root directory and add your Discord bot token:
+   ```env
+   DISCORD_TOKEN=your_discord_bot_token
+   ```
+    
+4.  Run the bot:
+Install dependencies:
+   ```bash
+   node index.js
+   ```
 
 ## 🛠️ Setup
 
@@ -60,7 +50,6 @@ This Discord Music Bot is a fun and interactive tool designed to enhance user en
     *   Place your audio files in the `Songs` folder.
     *   Update the `SONG_PATH` in `index.js` to point to the correct file.
 
-* * *
 
 ## 🤖 Usage
 
@@ -70,15 +59,12 @@ This Discord Music Bot is a fun and interactive tool designed to enhance user en
     *   Join the user's voice channel.
     *   Play the corresponding song.
 
-* * *
-
 
 
 ## 📝 License
 
 This project is licensed under the MIT License.
 
-* * *
 
 ## 🙌 Acknowledgments
 
